@@ -7,15 +7,16 @@ import {
 } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { AboutUs } from "./pages/AboutUs";
-import { NavBar } from "./component/NavBar";
+import { Login } from "./pages/Login";
+
 
 function App() {
   return (
     <BrowserRouter>
-    <NavBar />
     <Routes>
-    <Route exact path="Home" element={<Home/>} />
-    <Route exact path="AboutUs" element={<AboutUs/>} />
+    <Route exact path="/" element={<Home/>} />
+    <Route exact path="/AboutUs" element={<AboutUs/>} />
+    <Route exact path="/Login" element={<Login/>} />
     </Routes>
     </BrowserRouter>
   );

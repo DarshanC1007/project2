@@ -5,5 +5,5 @@ export const AboutUs = () => {
         <div>
             <p>about our site</p>
         </div>
-    )
+    );
 }
